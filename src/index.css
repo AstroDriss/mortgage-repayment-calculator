@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+body {
+  font-family: PlusJakartaSans;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+  color: currentColor;
+  height: 1em;
+  width: 1em;
+  position: relative;
+}
+input[type="radio"]::before {
+  content: "";
+  background-color: theme("colors.Lime");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  transform-origin: left center;
+  transform: translate(-50%, -50%);
+  scale: 0;
+  transition: scale 200ms;
+}
+input[type="radio"]:checked::before {
+  scale: 1;
+}
