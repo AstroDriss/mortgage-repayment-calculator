@@ -179,7 +179,7 @@ const CalculationForm = ({ setRepayment }: Props) => {
         </div>
 
         <button className="flex justify-center items-center min-[400px]:self-start gap-2 min-[400px]:gap-4 px-8 py-4 mt-5 text-lg font-bold transition-colors rounded-full bg-Lime hover:bg-Lime/50">
-          <img src={Calculator} />
+          <img src={Calculator} alt="" />
           Calculate Repayments
         </button>
       </form>

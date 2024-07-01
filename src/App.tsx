@@ -15,7 +15,7 @@ function App() {
 
   return (
     <main className="grid h-full place-content-center sm:w-[max(80%,600px)] min-[768px]:w-auto mx-auto">
-      <article className="grid max-w-[1004px] min-[768px]:grid-cols-2 rounded-3xl shadow-md">
+      <article className="grid max-w-[1004px] min-[768px]:grid-cols-2 rounded-3xl shadow-xl bg-white">
         <div className="min-[400px]:p-10 p-5 bg-white rounded-[inherit]">
           <CalculationForm setRepayment={setRepayment} />
         </div>
